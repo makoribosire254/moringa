@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body,about.html {
+  background-color: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2,h3{
+  font-family: sans-serif;Arial;
+  text-align: center;
+  background-color: lightgray;
+  text-transform: uppercase;
+  color: indigo;
+}
+ul{
+  list-style-type: none;
+  display: block;
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+a{
+  text-decoration: none;
+}
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 5px 10px
+}
+li a:hover{
+  background-color: lightgray;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 30%;
+  background-color:lightblue;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.Education ol li{
+  list-style-type: none;
+  padding:0;
+  margin: 5px;
+}
